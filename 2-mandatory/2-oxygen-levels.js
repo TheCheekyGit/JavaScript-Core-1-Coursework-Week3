@@ -16,7 +16,9 @@ function findSafeOxygenLevel(oxygen) {
   const planetMatches = oxygen.filter((oxy) => {
     return parseFloat(oxy) >= 19.5 && parseFloat(oxy) <= 23.5;
   });
+
   console.log(planetMatches[0]);
+
   return planetMatches[0];
 }
 

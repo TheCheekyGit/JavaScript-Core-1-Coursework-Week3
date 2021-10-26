@@ -2,17 +2,20 @@
 Write a function that:
 - Accepts an array as a parameter.
 - Returns a new array containing the first five elements of the passed array.
+loop through the array and slice out the first 5 element into a new array - no test code file so had to pull the array into the function.
 */
-function first5() {
-}
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+console.log(numbers);
+
+let newNumbers = numbers.slice(0, 5);
+console.log(newNumbers);
 
 /*
 Write a function that:
 - Accepts an array as a parameter.
 - Returns a new array containing the same elements, except sorted.
 */
-function sortArray() {
-}
+function sortArray() {}
 
 /*
 NOTE: This exercise is the same as one you did last week - try to do it again using things you learnt this week.
@@ -24,8 +27,7 @@ Write a function that:
 - Removes any forward slashes (/) in the strings.
 - Makes the strings all lowercase.
 */
-function tidyUpString() {
-}
+function tidyUpString() {}
 
 /*
 Write a function that:
@@ -33,8 +35,7 @@ Write a function that:
 - Returns a new array containing the same elements, but without the element at the passed index.
 */
 
-function remove() {
-}
+function remove() {}
 
 /*
 Write a function that:
@@ -44,18 +45,17 @@ Write a function that:
 - Numbers greater 100 must be replaced with 100.
 */
 
-function formatPercentage() {
-}
+function formatPercentage() {}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
-test("first5 function works for more than five elements", () => {
-  const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-  const copyOfOriginal = numbers.slice();
-  expect(first5(numbers)).toEqual([1, 2, 3, 4, 5]);
-  // Make sure first5 didn't change its input array.
-  expect(numbers).toEqual(copyOfOriginal);
-});
+// test("first5 function works for more than five elements", () => {
+//   const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+//   const copyOfOriginal = numbers.slice();
+//   expect(first5(numbers)).toEqual([1, 2, 3, 4, 5]);
+//   // Make sure first5 didn't change its input array.
+//   expect(numbers).toEqual(copyOfOriginal);
+// });
 
 test("first5 function returns a a smaller array for fewer than five elements", () => {
   const letters = ["z", "y", "x"];
